@@ -24,3 +24,9 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+#presentation div h1{
+  font-weight: bolder;
+  font-size: 2em;
+  margin-bottom: .4em;
+}
