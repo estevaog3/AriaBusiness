@@ -1,3 +1,7 @@
+:root{
+  --light-green: #14bf98;
+}
+
 #presentation{
   position: relative;
   height: 510px;
@@ -41,7 +45,7 @@
 }
 
 #presentation div button{
-  background-color: #14bf98;
+  background-color: var(--light-green);
   color:#fff;
   padding: .8em 2em;
   border-radius: 5px;
