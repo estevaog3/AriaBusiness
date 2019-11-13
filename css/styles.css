@@ -1,14 +1,17 @@
 #presentation{
   position: relative;
-  height: 450px;
+  height: 80vh;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
+  overflow: hidden;
 }
 
 #presentation img{
   height: 100%;
   width: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 #presentation header{
