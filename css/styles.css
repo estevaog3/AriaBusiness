@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-#presentation img{
+#presentation .background{
   height: 100%;
   width: auto;
   margin-left: 50%;
@@ -27,6 +27,15 @@
   position: absolute;
   top: 0;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+#presentation nav img{
+  height: 26px;
+  width: auto;
 }
 
 #presentation div{
