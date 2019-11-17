@@ -15,12 +15,23 @@
     src="./assets/header-background.jpg"
     alt="beautiful lake picture">
     <nav>
-      <img src="./assets/logo.svg" alt="Aria">
-      <img src="./assets/hamburger-menu.png" 
+      <img class="nav__logo" 
+      src="./assets/logo.svg" alt="Aria">
+      <img class="nav__menu-icon" 
+      onclick="handleMobileMenu()"
+      src="./assets/hamburger-menu.png" 
       alt="Menu">
-
+      <div class="nav__menu-content">
+        <a class="small-text-uppercase" href="#">Home</a>
+        <a class="small-text-uppercase" href="#">Intro</a>
+        <a class="small-text-uppercase" href="#">Services</a>
+        <a class="small-text-uppercase" href="#">Call me</a>
+        <a class="small-text-uppercase" href="#">Projects</a>
+        <a class="small-text-uppercase" href="#">About &#9662;</a>
+        <a class="small-text-uppercase" href="#">Contact</a>
+      </div>
     </nav>
-    <div>
+    <div class="presentation__content">
       <h1>BUSINESS SOLUTIONS</h1>
       <p class="small-text">Aria is a top consultancy company 
         specializing in business growth 
