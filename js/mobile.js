@@ -3,14 +3,12 @@ const pathOfCloseIcon = "./assets/close.png";
 
 function handleMobileMenu(){
   let menuIcon = document.getElementsByClassName("nav__menu-icon")[0];
-  let menuContent = document.getElementsByClassName("nav__menu-content")[0];
+  let nav = document.getElementsByClassName("presentation__nav")[0];
   if(menuIcon.src.match(/hamburger-menu/g)){
-    menuContent.style.height = "275px";
-    menuContent.style.padding = "25px";
+    nav.style.height = "300px";
     menuIcon.src = pathOfCloseIcon;
   }else{
-    menuContent.style.height = "0";
-    menuContent.style.padding = "0";
+    nav.style.height = "55px";
     menuIcon.src = pathOfHamburgerIcon;
   }
 }
