@@ -53,7 +53,7 @@
   overflow: hidden;
   width: 100vw;
   background-color: var(--dark-blue);
-  animation: all .5s ease;
+  transition: height .4s ease-in-out;
 }
 
 .nav__menu-content a{
