@@ -1,7 +1,7 @@
 const pathOfHamburgerIcon = "./assets/hamburger-menu.png";
 const pathOfCloseIcon = "./assets/close.png";
 
-function handleMobileMenu(){
+function toggleMobileMenu(){
   let menuIcon = document.getElementsByClassName("nav__menu-icon")[0];
   let nav = document.getElementsByClassName("presentation__nav")[0];
   if(menuIcon.src.match(/hamburger-menu/g)){
@@ -12,3 +12,6 @@ function handleMobileMenu(){
     menuIcon.src = pathOfHamburgerIcon;
   }
 }
+
+let menuIcon = document.getElementsByClassName("nav__menu-icon")[0];
+menuIcon.addEventListener("click", toggleMobileMenu);
