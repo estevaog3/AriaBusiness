@@ -1,6 +1,8 @@
 :root{
   --light-green: #14bf98;
   --dark-blue: #113448;
+  --dark-gray: #484a46;
+  --light-gray: #787976;
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
 }
@@ -104,4 +106,55 @@
   font-weight: bolder;
   font-size: .65rem;
   text-decoration: none;
+}
+
+/* INTRO section */
+
+#intro{
+  width: 510px;
+  display: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro__content{
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+.intro__content .intro__image-container, 
+.intro__content .intro__image-container img{
+  height: auto;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.intro__content .intro__image-container{
+  overflow: hidden;
+}
+
+.intro__content .intro__image-container img{
+  transition: all .4s cubic-bezier(.17,.84,.44,1);
+}
+
+.intro__content .intro__image-container img:hover{
+  transform: scale(1.15);
+}
+
+.intro__steps{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.medium-heading{
+  font-size: 1.4rem;
+  color: var(--dark-gray);
+  font-weight: bolder;
+}
+
+.medium-hexagon{
+  width: 4.8rem;
+  height: 4.8rem;
 }
