@@ -124,15 +124,13 @@
 
 #intro{
   width: 510px;
-  display: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5rem auto;
 }
 
 .intro__content{
   display: flex;
   flex-direction: column;
-  margin: 5rem 0;
+  margin-bottom: 5rem;
 }
 
 .intro__content .small-text-uppercase{
@@ -155,6 +153,26 @@
 
 .intro__content .intro__image-container img:hover{
   transform: scale(1.15);
+}
+
+.intro__heading-container{
+  margin-bottom: 1.2rem;
+}
+
+.intro__heading-container h4{
+  margin-bottom: .8em;
+}
+
+.intro__text-container{
+  margin-bottom: 2.5rem;
+}
+
+.intro__text-container p{
+  margin-bottom: 1rem;
+}
+
+.intro__text-container h4{
+  margin-top: 1rem;
 }
 
 .intro__steps{
