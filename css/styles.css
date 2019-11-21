@@ -103,6 +103,16 @@
   cursor: pointer;
 }
 
+.presentation__content button{
+  transition: all .4s cubic-bezier(.17,.84,.44,1);
+  box-shadow: inset 0 0 0 2px var(--light-green);
+}
+
+.presentation__content button:hover{
+  background: none;
+  color: var(--light-green);
+}
+
 .small-text-uppercase{
   text-transform: uppercase;
   font-weight: bolder;
