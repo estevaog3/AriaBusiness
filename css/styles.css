@@ -85,12 +85,14 @@
 
 #presentation div p{
   margin: 0 2em 2em 2em;
+  color: #fff;
 }
 
 .small-text{
   font-size: .8rem;
   line-height: 1.5em;
   text-decoration: none;
+  color: var(--light-gray);
 }
 
 .medium-green-button{
@@ -123,6 +125,9 @@
   margin: 5rem 0;
 }
 
+.intro__content .small-text-uppercase{
+  color: var(--light-green);
+}
 .intro__content .intro__image-container, 
 .intro__content .intro__image-container img{
   height: auto;
@@ -149,9 +154,19 @@
 }
 
 .medium-heading{
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--dark-gray);
   font-weight: bolder;
+}
+
+.small-heading{
+  font-size: .75rem;
+  font-weight: bolder;
+  color: var(--dark-gray);
+  text-decoration: none;
+}
+.quote{
+  font-style: italic;
 }
 
 .medium-hexagon{
