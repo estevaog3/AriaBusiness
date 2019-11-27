@@ -1,0 +1,20 @@
+:root{
+  --light-green: #14bf98;
+  --dark-blue: #113448;
+  --dark-gray: #484a46;
+  --light-gray: #787976;
+  --fas-primary-color: #fff;
+  font-size: 20px;
+}
+
+.fas {
+  color: var(--fas-primary-color);
+}
+
+.intro__icon-container .fas{
+  font-size: 1.6em;
+}
+
+@import 'presentation';
+@import 'intro';
+@import 'media-queries';
