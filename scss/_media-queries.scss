@@ -1,10 +1,12 @@
+/* on small screen sizes: */
+
 @media only screen and (min-width: 755px){
   #intro{
     max-width: 690px;
   }
 }
 
-/* on large screen sizes */
+/* on medium screen sizes: */
 
 @media only screen and (min-width: 980px){
   #intro{
@@ -41,4 +43,12 @@
     width: 55%;
   }
 
+}
+
+/* on large screen sizes: */
+
+@media only screen and (min-width: 1200px){
+  #intro{
+    max-width: 1130px;
+  }
 }
