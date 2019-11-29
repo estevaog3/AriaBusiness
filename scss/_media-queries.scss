@@ -1,6 +1,10 @@
 /* on small screen sizes: */
 
 @media only screen and (min-width: 755px){
+  #presentation{
+    height: 600px;
+  }
+
   #intro{
     max-width: 690px;
   }
@@ -9,6 +13,10 @@
 /* on medium screen sizes: */
 
 @media only screen and (min-width: 980px){
+  #presentation{
+    height: 840px;
+  }
+
   #intro{
     max-width: 980px;
   }
@@ -48,6 +56,9 @@
 /* on large screen sizes: */
 
 @media only screen and (min-width: 1200px){
+  #presentation{
+    height: 900px;
+  }
   #intro{
     max-width: 1130px;
   }
