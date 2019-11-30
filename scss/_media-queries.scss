@@ -12,18 +12,19 @@
 
 /* on medium screen sizes: */
 
-@media only screen and (min-width: 980px){
+@media only screen and (min-width: 1000px){
   #presentation{
     height: 840px;
   }
 
   #intro{
+    width: auto;
     max-width: 980px;
   }
 
   .intro__content{
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .intro__steps{
@@ -61,5 +62,8 @@
   }
   #intro{
     max-width: 1130px;
+  }
+  .intro__content{
+    justify-content: space-between;
   }
 }
