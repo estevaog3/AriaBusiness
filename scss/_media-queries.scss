@@ -29,11 +29,14 @@
 
   .intro__steps{
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .intro__steps li{
     margin-top: 0;
     text-align: left;
+    max-width: 350px;
+    padding: 0 10px;
   }
 
   .intro__icon-container i {
