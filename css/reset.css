@@ -12,10 +12,10 @@ ul, ol, li{
   list-style: none;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, button{
   font-family: 'Montserrat', sans-serif;
 }
 
-p, q{
+p, q, a{
   font-family: 'Open Sans', sans-serif;
 }
