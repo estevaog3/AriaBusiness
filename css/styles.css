@@ -325,4 +325,11 @@
             justify-content: space-between;
   }
 }
+
+@media only screen and (min-width: 1600px) {
+  #presentation .background {
+    height: auto;
+    widows: 100%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
