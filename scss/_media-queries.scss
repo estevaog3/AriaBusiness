@@ -5,6 +5,26 @@
     height: 600px;
   }
 
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    margin-top: 1.2em;
+  }
+
+  .nav__menu-icon{
+    display: none;
+  }
+
+  .menu{
+    width: auto;
+  }
+
+  .menu__item{
+    display: inline-block;
+  }
+
   #intro{
     max-width: 690px;
   }

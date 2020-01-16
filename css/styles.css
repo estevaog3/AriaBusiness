@@ -41,8 +41,8 @@
   padding: 12px 20px 12px 0;
   text-align: justify;
   overflow: hidden;
-  -webkit-transition: height 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
-  transition: height 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
+  -webkit-transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
+  transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
 }
 
 .nav--opened {
@@ -256,6 +256,28 @@
 @media only screen and (min-width: 755px) {
   #presentation {
     height: 600px;
+  }
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    margin-top: 1.2em;
+  }
+  .nav__menu-icon {
+    display: none;
+  }
+  .menu {
+    width: auto;
+  }
+  .menu__item {
+    display: inline-block;
   }
   #intro {
     max-width: 690px;
