@@ -21,7 +21,7 @@
   position: fixed;
   z-index: 2;
   top: 0;
-  padding: 12px 20px 12px 0;
+  padding: 12px 20px;
   text-align: justify;
   overflow: hidden;
   transition: all .4s cubic-bezier(.17,.84,.44,1);
@@ -31,9 +31,12 @@
   height: 300px;
 }
 
+.nav--on-scroll{
+  
+}
+
 .nav__logo {
   height: 32px;
-  margin-left: 20px;
   cursor: pointer;
 }
 
