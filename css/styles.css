@@ -65,12 +65,12 @@
   cursor: pointer;
 }
 
-.nav .nav__menu-content {
+.menu {
   width: 100vw;
   padding: 12px;
 }
 
-.nav__menu-content a {
+.menu__item {
   color: #fff;
   display: block;
   padding: .6em;
