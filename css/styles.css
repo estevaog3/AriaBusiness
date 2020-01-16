@@ -49,6 +49,11 @@
   height: 300px;
 }
 
+.nav--on-scroll {
+  background-color: var(--dark-blue) !important;
+  margin-top: 0 !important;
+}
+
 .nav__logo {
   height: 32px;
   cursor: pointer;
