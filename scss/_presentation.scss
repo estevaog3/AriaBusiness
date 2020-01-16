@@ -14,7 +14,7 @@
   transform: translateX(-50%);
 }
 
-#presentation nav{
+.nav{
   height: 55px; 
   width: 100%;
   background-color: var(--dark-blue);
@@ -47,7 +47,7 @@
   cursor: pointer;
 }
 
-#presentation nav .nav__menu-content{
+.nav .nav__menu-content{
   width: 100vw;
   padding: 12px;
 }
