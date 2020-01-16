@@ -27,6 +27,10 @@
   transition: height .4s cubic-bezier(.17,.84,.44,1);
 }
 
+.nav--opened{
+  height: 300px;
+}
+
 .nav__logo {
   height: 32px;
   margin-left: 20px;
