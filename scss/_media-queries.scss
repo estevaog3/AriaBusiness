@@ -43,6 +43,22 @@
     height: 840px;
   }
 
+  .nav{
+    justify-content: flex-end;
+  }
+
+  .nav__logo{
+    margin-right: auto;
+  }
+
+  .social{
+    display: inline-block;
+
+    .hexagon{
+      display: inline-block;
+    }
+  }
+
   #intro{
     width: auto;
     max-width: 980px;
@@ -90,6 +106,11 @@
   #presentation{
     height: 900px;
   }
+
+  .nav{
+    padding: 12px 80px;
+  }
+
   #intro{
     max-width: 1130px;
   }
@@ -104,5 +125,9 @@
       height: auto;
       widows: 100%;
     }
+  }
+
+  .nav{
+    padding: 12px 180px;
   }
 }

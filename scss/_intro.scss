@@ -100,6 +100,11 @@
   height: 96px;
 }
 
+.hexagon--smaller{
+  width: 26px;
+  height: 26px;
+}
+
 .hexagon__icon{
   position: absolute;
   top: 50%;
@@ -109,4 +114,8 @@
 
 .hexagon__icon--big{
   font-size: 1.6em;
+}
+
+.hexagon__icon--smaller{
+  font-size: .6em;
 }
