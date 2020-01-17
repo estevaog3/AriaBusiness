@@ -52,6 +52,7 @@
 .nav--on-scroll {
   background-color: var(--dark-blue) !important;
   margin-top: 0 !important;
+  height: 55px !important;
 }
 
 .nav__logo {
@@ -272,7 +273,7 @@
         -ms-flex-align: center;
             align-items: center;
     background: none;
-    margin-top: 1.2em;
+    height: 110px;
   }
   .nav__menu-icon {
     display: none;
