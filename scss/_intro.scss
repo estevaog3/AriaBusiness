@@ -60,6 +60,9 @@
 
 .intro__steps li{
   margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .intro__steps li:first-child{
   margin-top: 0;
@@ -85,18 +88,25 @@
   font-style: italic;
 }
 
-.medium-hexagon{
-  width: 4.8rem;
-  height: 4.8rem;
-}
-
-.intro__icon-container{
+.hexagon{
+  width: 52px;
+  height: 52px;
   position: relative;
+  background: center / contain no-repeat url(../assets/hexagon-green.svg) border-box;
 }
 
-.intro__icon-container i{
+.hexagon--big{
+  width: 96px;
+  height: 96px;
+}
+
+.hexagon__icon{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.hexagon__icon--big{
+  font-size: 1.6em;
 }

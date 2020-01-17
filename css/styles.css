@@ -207,6 +207,16 @@
 
 .intro__steps li {
   margin-top: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .intro__steps li:first-child {
@@ -234,21 +244,28 @@
   font-style: italic;
 }
 
-.medium-hexagon {
-  width: 4.8rem;
-  height: 4.8rem;
-}
-
-.intro__icon-container {
+.hexagon {
+  width: 52px;
+  height: 52px;
   position: relative;
+  background: center/contain no-repeat url(../assets/hexagon-green.svg) border-box;
 }
 
-.intro__icon-container i {
+.hexagon--big {
+  width: 96px;
+  height: 96px;
+}
+
+.hexagon__icon {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.hexagon__icon--big {
+  font-size: 1.6em;
 }
 
 /* on small screen sizes: */
@@ -320,6 +337,9 @@
     text-align: left;
     max-width: 350px;
     padding: 0 10px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .intro__icon-container i {
     position: absolute;
