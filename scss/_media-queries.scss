@@ -13,6 +13,12 @@
     height: 110px;
   }
 
+  .nav--on-scroll{
+    background-color: var(--dark-blue);
+    margin-top: 0;  
+    height: 55px;
+  }
+
   .nav__menu-icon{
     display: none;
   }

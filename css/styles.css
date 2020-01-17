@@ -49,12 +49,6 @@
   height: 300px;
 }
 
-.nav--on-scroll {
-  background-color: var(--dark-blue) !important;
-  margin-top: 0 !important;
-  height: 55px !important;
-}
-
 .nav__logo {
   height: 32px;
   cursor: pointer;
@@ -274,6 +268,11 @@
             align-items: center;
     background: none;
     height: 110px;
+  }
+  .nav--on-scroll {
+    background-color: var(--dark-blue);
+    margin-top: 0;
+    height: 55px;
   }
   .nav__menu-icon {
     display: none;
