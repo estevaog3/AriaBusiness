@@ -67,6 +67,7 @@
   .intro__content{
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
   }
 
   .intro__steps{
@@ -90,8 +91,9 @@
     transform: translate(100%, -50%);
   }
 
-  .intro__content > div{
+  .intro__content > .text-container{
     width: 40%;
+    margin-bottom: 0;
   }
 
   .intro__content .intro__image-container{

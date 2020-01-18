@@ -10,8 +10,8 @@
   margin-bottom: 5rem;
 }
 
-.intro__content .small-text-uppercase{
-  color: var(--light-green);
+.intro__content > .text-container{
+  margin-bottom: 2rem;
 }
 .intro__content .intro__image-container, 
 .intro__content .intro__image-container img{
@@ -32,24 +32,23 @@
   transform: scale(1.15);
 }
 
-.intro__heading-container{
+.text-header{
+  text-decoration: none;
+  line-height: 1.5em;
   margin-bottom: 1.2rem;
+  font-weight: bolder;
 }
 
-.intro__heading-container h4{
-  margin-bottom: .8em;
+.text-header__title{
+  font-size: .65rem;
+  text-transform: uppercase;
+  color: var(--light-green);
+  margin-bottom: .3rem;
 }
 
-.intro__text-container{
-  margin-bottom: 2.5rem;
-}
-
-.intro__text-container p{
-  margin-bottom: 1rem;
-}
-
-.intro__text-container h4{
-  margin-top: 1rem;
+.text-header__message{
+  color: var(--dark-gray);
+  font-size: 1.3rem;
 }
 
 .intro__steps{
@@ -69,23 +68,6 @@
 }
 .intro__steps li h3{
   margin-bottom: .8em;
-}
-
-.medium-heading{
-  font-size: 1.2rem;
-  color: var(--dark-gray);
-  font-weight: bolder;
-}
-
-.small-heading{
-  font-size: .75rem;
-  font-weight: bolder;
-  color: var(--dark-gray);
-  text-decoration: none;
-}
-
-.quote{
-  font-style: italic;
 }
 
 .hexagon{
