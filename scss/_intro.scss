@@ -13,23 +13,28 @@
 .intro__content > .text-container{
   margin-bottom: 2rem;
 }
-.intro__content .intro__image-container, 
-.intro__content .intro__image-container img{
+
+.image-container{
+  overflow: hidden;
   height: auto;
   width: 100%;
+}
+
+.image-container__image{
+  height: 100%;
+  width: 100%;
+}
+
+.image-container--border-small{
   border-radius: 5px;
 }
 
-.intro__content .intro__image-container{
-  overflow: hidden;
-}
-
-.intro__content .intro__image-container img{
+.image-container__image--zoom-yes{
   transition: all .4s cubic-bezier(.17,.84,.44,1);
-}
-
-.intro__content .intro__image-container img:hover{
-  transform: scale(1.15);
+  
+  &:hover{
+    transform: scale(1.15);
+  }
 }
 
 .text-header{

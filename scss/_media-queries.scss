@@ -34,6 +34,14 @@
   #intro{
     max-width: 690px;
   }
+
+  .intro__content{
+
+    .image-container{
+      width: 690px;
+      height: 446px;
+    }
+  }
 }
 
 /* on medium screen sizes: */
@@ -68,6 +76,11 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+
+    .image-container{
+      width: 530px;
+      height: 340px;
+    }
   }
 
   .intro__steps{
@@ -96,10 +109,6 @@
     margin-bottom: 0;
   }
 
-  .intro__content .intro__image-container{
-    width: 55%;
-  }
-
 }
 
 /* on large screen sizes: */
@@ -118,6 +127,11 @@
   }
   .intro__content{
     justify-content: space-between;
+    
+    .image-container{
+      height: 410px;
+      width: 635px;
+    }
   }
 }
 
