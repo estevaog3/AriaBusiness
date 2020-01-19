@@ -93,7 +93,7 @@
   color: var(--light-gray);
 }
 .text--medium{
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .text--small{
   font-size: .8rem;
@@ -119,8 +119,14 @@
 .text--italic{
   font-style: italic;
 }
-.text--distance-small{
+.text--distance-medium{
   margin-bottom: 1rem;
+}
+.text--distance-small{
+  margin-bottom: .8rem;
+}
+.text--distance-smaller{
+  margin-bottom: .65rem;
 }
 .medium-green-button{
   background-color: var(--light-green);

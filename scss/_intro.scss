@@ -60,6 +60,10 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  .hexagon{
+    margin-bottom: .7rem;
+  }
 }
 
 .intro__steps li{
@@ -70,9 +74,6 @@
 }
 .intro__steps li:first-child{
   margin-top: 0;
-}
-.intro__steps li h3{
-  margin-bottom: .8em;
 }
 
 .hexagon{
