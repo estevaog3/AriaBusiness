@@ -4,6 +4,8 @@
   --dark-gray: #484a46;
   --light-gray: #787976;
   --fas-primary-color: #fff;
+  --lighter-gray: #ebe8e8;
+  --light-white: #fbfbfb;
   font-size: 20px;
 }
 
@@ -17,4 +19,5 @@
 
 @import 'presentation';
 @import 'intro';
+@import 'services';
 @import 'media-queries';

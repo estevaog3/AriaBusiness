@@ -4,6 +4,8 @@
   --dark-gray: #484a46;
   --light-gray: #787976;
   --fas-primary-color: #fff;
+  --lighter-gray: #ebe8e8;
+  --light-white: #fbfbfb;
   font-size: 20px;
 }
 
@@ -163,7 +165,7 @@
 
 .button {
   background-color: var(--light-green);
-  padding: .7rem 1.8rem;
+  padding: 1em 2.2em;
   border-radius: 5px;
   cursor: pointer;
   -webkit-transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
@@ -231,6 +233,10 @@
   line-height: 1.5em;
   margin-bottom: 1.2rem;
   font-weight: bolder;
+}
+
+.text-header--align-center {
+  text-align: center;
 }
 
 .text-header__title {
@@ -309,6 +315,101 @@
 
 .hexagon__icon--smaller {
   font-size: .6em;
+}
+
+#services {
+  margin: 5rem auto;
+  background-color: var(--lighter-white);
+}
+
+#services .text-header {
+  max-width: 450px;
+  margin-bottom: 3rem;
+}
+
+.section > * {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  max-width: 510px;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 510px;
+}
+
+.card {
+  border-radius: 7px;
+  border: 1px solid var(--lighter-gray);
+  margin-top: 4rem;
+}
+
+.card:first-child {
+  margin-top: 0;
+}
+
+.card > .image-container {
+  border-radius: 7px 7px 0 0;
+}
+
+.card__title {
+  padding: 1.45rem 1.2rem;
+  text-align: center;
+}
+
+.card__body {
+  padding: 0 1.2rem;
+  font-size: .8rem;
+}
+
+.card__description {
+  margin-bottom: 1.2rem;
+}
+
+.card__description > * {
+  margin-bottom: 1rem;
+}
+
+.card__footer {
+  text-align: center;
+}
+
+.card__footer .button {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.ul__li {
+  margin: .5rem 0;
+  color: var(--light-gray);
+}
+
+.ul--decorated-with-squares > .ul__li {
+  position: relative;
+  padding-left: .8em;
+}
+
+.ul--decorated-with-squares > .ul__li::after {
+  content: '';
+  background-color: var(--light-green);
+  position: absolute;
+  height: .5em;
+  width: .5em;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
 }
 
 /* on small screen sizes: */
