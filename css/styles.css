@@ -397,7 +397,7 @@
 
 .ul--decorated-with-squares > .ul__li {
   position: relative;
-  padding-left: .8em;
+  padding-left: 1.2em;
 }
 
 .ul--decorated-with-squares > .ul__li::after {
@@ -408,8 +408,8 @@
   width: .5em;
   top: 50%;
   left: 0;
-  -webkit-transform: translate(-50%, -70%);
-          transform: translate(-50%, -70%);
+  -webkit-transform: translateY(-70%);
+          transform: translateY(-70%);
 }
 
 /* on small screen sizes: */

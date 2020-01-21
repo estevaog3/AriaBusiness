@@ -64,7 +64,7 @@
 .ul--decorated-with-squares{
   & > .ul__li{
     position: relative;
-    padding-left: .8em;
+    padding-left: 1.2em;
   }
   & > .ul__li::after{
     content: '';
@@ -74,6 +74,6 @@
     width: .5em;
     top: 50%;
     left: 0;
-    transform: translate(-50%, -70%);
+    transform: translateY(-70%);
   }
 }
