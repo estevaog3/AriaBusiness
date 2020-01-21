@@ -1,6 +1,4 @@
 #services{
-  margin: 5rem auto;
-  background-color: var(--lighter-white);
 
   .text-header{
     max-width: 450px;
@@ -9,6 +7,8 @@
 }
 
 .section{
+  padding: 5rem 0;
+  margin: 0 auto;
   & > * {
     position: relative;
     margin-left: auto;
@@ -16,6 +16,10 @@
     width: 95%;
     max-width: 510px;
   }
+}
+
+.section--background-color-light-white{
+  background-color: var(--light-white);
 }
 
 .card-container{

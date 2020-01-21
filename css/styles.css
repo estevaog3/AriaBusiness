@@ -317,14 +317,14 @@
   font-size: .6em;
 }
 
-#services {
-  margin: 5rem auto;
-  background-color: var(--lighter-white);
-}
-
 #services .text-header {
   max-width: 450px;
   margin-bottom: 3rem;
+}
+
+.section {
+  padding: 5rem 0;
+  margin: 0 auto;
 }
 
 .section > * {
@@ -333,6 +333,10 @@
   margin-right: auto;
   width: 95%;
   max-width: 510px;
+}
+
+.section--background-color-light-white {
+  background-color: var(--light-white);
 }
 
 .card-container {
