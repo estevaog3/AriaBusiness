@@ -580,7 +580,7 @@
 @media only screen and (min-width: 1600px) {
   #presentation .background {
     height: auto;
-    widows: 100%;
+    width: 100%;
   }
   .nav {
     padding: 12px 180px;
