@@ -42,6 +42,22 @@
   .section > *{
     max-width: 690px;
   }
+
+  footer.section{
+    .ul{
+      flex-direction: row;
+      justify-content: space-between;
+      
+      .ul__li{
+        margin-top: 0;
+      }
+      .ul__li:first-child{
+        /* The width value should be set carrefully, 
+        so that the texts on other li childs don't overlap. */
+        width: 40%;
+      }
+    }
+  }
 }
 
 /* on medium screen sizes: */
@@ -115,6 +131,14 @@
     .card{
       margin-top: 0;
       width: 290px;
+    }
+  }
+
+  footer.section{
+    .ul{
+      .ul__li:first-child{
+        width: 50%;
+      }
     }
   }
 

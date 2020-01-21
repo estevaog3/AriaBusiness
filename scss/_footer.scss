@@ -3,6 +3,15 @@ footer.section{
     font-size: .7rem;
   }
   padding-bottom: 0;
+
+  .ul{
+    display: flex;
+    flex-direction: column;
+
+    .ul__li:first-child{
+      max-width: 445px;
+    }
+  }
 }
 
 .authorship{

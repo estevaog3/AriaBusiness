@@ -429,6 +429,20 @@ footer.section .text--small {
   font-size: .7rem;
 }
 
+footer.section .ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer.section .ul .ul__li:first-child {
+  max-width: 445px;
+}
+
 .authorship {
   text-align: center;
   padding: 1rem;
@@ -472,6 +486,23 @@ footer.section .text--small {
   }
   .section > * {
     max-width: 690px;
+  }
+  footer.section .ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer.section .ul .ul__li {
+    margin-top: 0;
+  }
+  footer.section .ul .ul__li:first-child {
+    /* The width value should be set carrefully, 
+        so that the texts on other li childs don't overlap. */
+    width: 40%;
   }
 }
 
@@ -558,6 +589,9 @@ footer.section .text--small {
   .card-container .card {
     margin-top: 0;
     width: 290px;
+  }
+  footer.section .ul .ul__li:first-child {
+    width: 50%;
   }
 }
 
