@@ -163,6 +163,10 @@
   margin-bottom: .65rem;
 }
 
+.text--underline {
+  text-decoration: underline;
+}
+
 .button {
   background-color: var(--light-green);
   padding: 1em 2.2em;
@@ -333,6 +337,10 @@
   background-color: var(--light-white);
 }
 
+.section--background-color-dark-blue {
+  background-color: var(--dark-blue);
+}
+
 .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,6 +400,10 @@
   color: var(--light-gray);
 }
 
+.ul__li--distance-medium {
+  margin-bottom: 2rem;
+}
+
 .ul--decorated-with-squares > .ul__li {
   position: relative;
   padding-left: 1.2em;
@@ -407,6 +419,19 @@
   left: 0;
   -webkit-transform: translateY(-70%);
           transform: translateY(-70%);
+}
+
+footer.section {
+  padding-bottom: 0;
+}
+
+footer.section .text--small {
+  font-size: .7rem;
+}
+
+.authorship {
+  text-align: center;
+  padding: 1rem;
 }
 
 /* on small screen sizes: */
