@@ -182,12 +182,6 @@
   color: var(--light-green);
 }
 
-#intro {
-  width: 95%;
-  max-width: 510px;
-  margin: 5rem auto;
-}
-
 .intro__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -447,9 +441,6 @@
   .menu__item {
     display: inline-block;
   }
-  #intro {
-    max-width: 690px;
-  }
   .intro__content .image-container {
     width: 690px;
     height: 446px;
@@ -477,10 +468,6 @@
   }
   .social .hexagon {
     display: inline-block;
-  }
-  #intro {
-    width: auto;
-    max-width: 980px;
   }
   .intro__content {
     -webkit-box-orient: horizontal;
@@ -556,9 +543,6 @@
   }
   .nav {
     padding: 12px 80px;
-  }
-  #intro {
-    max-width: 1130px;
   }
   .intro__content {
     -webkit-box-pack: justify;
