@@ -42,6 +42,10 @@
       height: 446px;
     }
   }
+
+  .section > *{
+    max-width: 690px;
+  }
 }
 
 /* on medium screen sizes: */
@@ -109,6 +113,20 @@
     margin-bottom: 0;
   }
 
+  .section > *{
+    max-width: 925px;
+  }
+
+  .card-container{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    .card{
+      margin-top: 0;
+      width: 290px;
+    }
+  }
+
 }
 
 /* on large screen sizes: */
@@ -131,6 +149,16 @@
     .image-container{
       height: 410px;
       width: 635px;
+    }
+  }
+
+  .section > *{
+    max-width: 1100px;
+  }
+
+  .card-container{
+    .card{
+      width: 335px;
     }
   }
 }
