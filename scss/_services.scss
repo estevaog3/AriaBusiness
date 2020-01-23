@@ -75,6 +75,9 @@
 .ul__li--width-large{
   width: 90%;
 }
+.ul__li--color-dark-gray{
+  color: var(--dark-gray);
+}
 
 .ul--decorated-with-squares{
   & > .ul__li{
@@ -90,5 +93,33 @@
     top: 50%;
     left: 0;
     transform: translateY(-70%);
+  }
+}
+
+.ul__li--horizontal-bar{
+  position: relative;
+  height: 4em;
+  &::after{
+    content: '';
+    position: absolute;
+    height: 1.6em;
+    width: 100%;
+    top:0;
+    left:0;
+    transform: translateY(100%);
+    background-color: var(--light-green);
+    border-radius: 3px;
+  }
+}
+
+.ul__li--horizontal-bar-width-90{
+  &::after{
+    width: 90%;
+  }
+}
+
+.ul__li--horizontal-bar-width-76{
+  &::after{
+    width: 76%;
   }
 }
