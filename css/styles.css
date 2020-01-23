@@ -168,6 +168,16 @@
   text-decoration: underline;
 }
 
+.text--on-hover-green {
+  -webkit-transition: var(--transition-all-ease-out);
+  transition: var(--transition-all-ease-out);
+}
+
+.text--on-hover-green:hover {
+  cursor: pointer;
+  color: var(--light-green);
+}
+
 .button {
   background-color: var(--light-green);
   padding: 1em 2.2em;

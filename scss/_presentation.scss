@@ -132,6 +132,13 @@
 .text--underline{
   text-decoration: underline;
 }
+.text--on-hover-green{
+  transition: var(--transition-all-ease-out);
+  &:hover{
+    cursor: pointer;
+    color: var(--light-green);
+  }
+}
 
 .button{
   background-color: var(--light-green);
