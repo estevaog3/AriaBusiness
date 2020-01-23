@@ -23,6 +23,8 @@
 
 .tab-container__nav{
   margin-bottom: 1.4rem;
+  --lighter-gray: #c1cace;
+  color: var(--lighter-gray);
 }
 
 .tab-container__nav-item{
@@ -30,7 +32,7 @@
   margin-right: 1rem;
   transition: var(--transition-all-ease-out);
   .fa-th{
-    color: var(--light-gray);
+    color: inherit;
     font-size: .6em;
     margin-right: .4em;
     transform: translateY(-.4em);
