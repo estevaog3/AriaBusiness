@@ -1,0 +1,22 @@
+#details{
+
+  & > .ul{
+    display: grid;
+    row-gap: 3.5rem;
+    grid-row-gap: 3.5rem;
+
+    & > .ul__li{
+      .image-container{
+        height: 430px;
+      }
+    }
+
+    & > .ul__li--width-large{
+      justify-self: center;
+
+      .text-header{
+        max-width: 575px;
+      }
+    }
+  }
+}

@@ -404,6 +404,10 @@
   margin-bottom: 2rem;
 }
 
+.ul__li--width-large {
+  width: 90%;
+}
+
 .ul--decorated-with-squares > .ul__li {
   position: relative;
   padding-left: 1.2em;
@@ -419,6 +423,26 @@
   left: 0;
   -webkit-transform: translateY(-70%);
           transform: translateY(-70%);
+}
+
+#details > .ul {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 3.5rem;
+  grid-row-gap: 3.5rem;
+}
+
+#details > .ul > .ul__li .image-container {
+  height: 430px;
+}
+
+#details > .ul > .ul__li--width-large {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#details > .ul > .ul__li--width-large .text-header {
+  max-width: 575px;
 }
 
 footer.section {
@@ -503,6 +527,9 @@ footer.section .ul .ul__li:first-child {
     /* The width value should be set carrefully, 
         so that the texts on other li childs don't overlap. */
     width: 40%;
+  }
+  #details > .ul > .ul__li--width-large {
+    width: 75%;
   }
 }
 
@@ -593,6 +620,29 @@ footer.section .ul .ul__li:first-child {
   footer.section .ul .ul__li:first-child {
     width: 50%;
   }
+  #details > .ul {
+    -ms-grid-rows: 555px 555px;
+        grid-template-rows: 555px 555px;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    row-gap: 0;
+    grid-row-gap: 0;
+  }
+  #details > .ul > .ul__li {
+    margin: 0;
+  }
+  #details > .ul > .ul__li.ul__li--width-large {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 88%;
+  }
+  #details > .ul > .ul__li .image-container {
+    height: 100%;
+  }
+  #details > .ul > .ul__li--width-large {
+    width: 75%;
+  }
 }
 
 /* on large screen sizes: */
@@ -617,6 +667,25 @@ footer.section .ul .ul__li:first-child {
   }
   .card-container .card {
     width: 335px;
+  }
+  #details > .ul > .ul__li {
+    margin: 0;
+  }
+  #details > .ul > .ul__li.ul__li--width-large {
+    max-width: 448px;
+  }
+  #details > .ul > .ul__li:nth-child(4n + 2) {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin-left: 4rem;
+  }
+  #details > .ul > .ul__li:nth-child(4n + 3) {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin-right: 4rem;
+  }
+  #details > .ul > .ul__li--width-large {
+    width: 75%;
   }
 }
 

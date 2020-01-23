@@ -58,6 +58,16 @@
       }
     }
   }
+
+  #details{
+
+    & > .ul{
+      
+      & > .ul__li--width-large{
+        width: 75%;
+      }
+    }
+  }
 }
 
 /* on medium screen sizes: */
@@ -142,6 +152,31 @@
     }
   }
 
+  #details{
+
+    & > .ul{
+      grid-template-rows: 555px 555px;
+      grid-template-columns: 50% 50%;
+      row-gap: 0;
+      grid-row-gap: 0;
+
+      & > .ul__li{
+        margin: 0;
+        &.ul__li--width-large{
+          align-self: center;
+          width: 88%;
+        }
+        .image-container{
+          height: 100%;
+        }
+      }
+
+      & > .ul__li--width-large{
+        width: 75%;
+      }
+    }
+  }
+
 }
 
 /* on large screen sizes: */
@@ -171,6 +206,34 @@
   .card-container{
     .card{
       width: 335px;
+    }
+  }
+
+  #details{
+
+    & > .ul{
+
+      & > .ul__li{
+        margin: 0;
+        
+        &.ul__li--width-large{
+          max-width: 448px;
+        }
+
+        &:nth-child(4n + 2){
+          justify-self: start;
+          margin-left: 4rem;
+        }
+
+        &:nth-child(4n + 3){
+          justify-self: end;
+          margin-right: 4rem;
+        }
+      }
+
+      & > .ul__li--width-large{
+        width: 75%;
+      }
     }
   }
 }
