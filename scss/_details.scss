@@ -29,6 +29,12 @@
   display: inline-block;
   margin-right: 1rem;
   transition: var(--transition-all-ease-out);
+  .fa-th{
+    color: var(--light-gray);
+    font-size: .6em;
+    margin-right: .4em;
+    transform: translateY(-.4em);
+  }
 
   &:last-child{
     margin-right: 0;
@@ -36,10 +42,16 @@
   &:hover{
     cursor: pointer;
     color: var(--light-green);
+    .fa-th{
+      color: var(--light-green);
+    }
   }
 }
 .tab-container__nav-item--selected{
   color: var(--light-green);
+  .fa-th{
+    color: var(--light-green);
+  }
 }
 
 .tab-container__tab-body{

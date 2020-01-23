@@ -172,6 +172,9 @@
         .tab-container{
           height: 360px;
         }
+        .tab-container__tab-body{
+          max-height: 310px;
+        }
       }
 
       & > .ul__li--width-large{
