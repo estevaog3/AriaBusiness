@@ -24,7 +24,7 @@
 }
 
 .image-container__image--zoom-yes{
-  transition: all .4s cubic-bezier(.17,.84,.44,1);
+  transition: var(--transition-all-ease-out);
   
   &:hover{
     transform: scale(1.15);

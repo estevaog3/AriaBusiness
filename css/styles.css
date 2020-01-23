@@ -7,6 +7,7 @@
   --lighter-gray: #ebe8e8;
   --light-white: #fbfbfb;
   font-size: 20px;
+  --transition-all-ease-out: all .4s cubic-bezier(.17,.84,.44,1);
 }
 
 .fas {
@@ -43,8 +44,8 @@
   padding: 12px 20px;
   text-align: justify;
   overflow: hidden;
-  -webkit-transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
+  -webkit-transition: var(--transition-all-ease-out);
+  transition: var(--transition-all-ease-out);
 }
 
 .nav--opened {
@@ -172,8 +173,8 @@
   padding: 1em 2.2em;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
+  -webkit-transition: var(--transition-all-ease-out);
+  transition: var(--transition-all-ease-out);
 }
 
 .button--on-hover-background-none-yes {
@@ -217,8 +218,8 @@
 }
 
 .image-container__image--zoom-yes {
-  -webkit-transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
-  transition: all 0.4s cubic-bezier(0.17, 0.84, 0.44, 1);
+  -webkit-transition: var(--transition-all-ease-out);
+  transition: var(--transition-all-ease-out);
 }
 
 .image-container__image--zoom-yes:hover {
