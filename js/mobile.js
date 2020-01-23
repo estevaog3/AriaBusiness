@@ -13,7 +13,7 @@ function toggleMobileMenu(){
   }
 }
 
-let tabBodies = document.getElementsByClassName('tabs-container__tab-body');
+let tabBodies = document.getElementsByClassName('tab-container__tab-body');
 
 function handleTabInteraction(event){
   if(tabBodies.length != navItems.length){
@@ -27,14 +27,14 @@ function handleTabInteraction(event){
     return;
   }
   for (let i = 0; i < navItems.length; i++){
-    navItems[i].classList.remove('tabs-container__nav-item--selected');
-    tabBodies[i].classList.remove('tabs-container__tab-body--selected');
+    navItems[i].classList.remove('tab-container__nav-item--selected');
+    tabBodies[i].classList.remove('tab-container__tab-body--selected');
   }
-  tabBodies[selectedItem - 1].classList.add('tabs-container__tab-body--selected');
-  navItems[selectedItem - 1].classList.add('tabs-container__nav-item--selected');
+  tabBodies[selectedItem - 1].classList.add('tab-container__tab-body--selected');
+  navItems[selectedItem - 1].classList.add('tab-container__nav-item--selected');
 }
 
-let navItems = document.getElementsByClassName("tabs-container__nav-item");
+let navItems = document.getElementsByClassName("tab-container__nav-item");
 for (let i = 0; i < navItems.length; i++) {
   navItems[i].addEventListener('click', handleTabInteraction);
 }
