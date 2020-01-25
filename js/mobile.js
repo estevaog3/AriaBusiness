@@ -43,3 +43,30 @@ function handleTabInteraction(event){
 for (let i = 0; i < navItems.length; i++) {
   navItems[i].addEventListener('click', handleTabInteraction);
 }
+
+function carousel (){
+  $('.carousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    nextArrow: $('.slick-next'),
+    prevArrow: $('.slick-prev'),
+    mobileFirst: true,
+    responsive :[
+      {
+        breakpoint: 755,
+        settings:{
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings:{
+          slidesToShow: 3,
+        },
+      }
+    ]
+  });
+}
+$(document).ready(carousel);

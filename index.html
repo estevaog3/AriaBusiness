@@ -6,6 +6,7 @@
   initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Aria</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
   <script src="https://kit.fontawesome.com/9dc7bd82a5.js" crossorigin="anonymous"></script>
@@ -277,10 +278,10 @@
         for our company without helping them reach their objectives
       </p>
     </div>
-    <div id="carousel-testimonials"class="carousel slide" data-ride="carousel"> 
-      <a class="carousel-control-prev carousel__arrow carousel__arrow--prev" href="#carousel-testimonials" role="button" data-slide="prev"></a>
-        <ul class="carousel-inner">
-          <li class="carousel-item active">
+    <div class="carousel-wrap"> 
+      <button class="carousel__arrow carousel__arrow--prev slick-prev" type="button"></button>
+        <ul class="carousel">
+          <li class="carousel__item">
             <img class="image--circle" src="./assets/testimonial-1.jpg" alt="Jude Thorn - Founder">
             <p class="text text--small text--italic text--distance-smaller" >
               The guys from Aria helped with getting my business 
@@ -288,7 +289,7 @@
             </p>
             <h3 class="text text--small text--bolder text--dark-gray">Jude Thorn - Founder</h3>
           </li>
-          <li class="carousel-item">
+          <li class="carousel__item">
             <img class="image--circle" src="./assets/testimonial-2.jpg" alt="Marsha Singer - Marketer">
             <p class="text text--small text--italic text--distance-smaller" >
               I purchased the Growth Accelerator service pack a few years ago 
@@ -296,7 +297,7 @@
             </p>
             <h3 class="text text--small text--bolder text--dark-gray">Marsha Singer - Marketer</h3>
           </li>
-          <li class="carousel-item">
+          <li class="carousel__item">
             <img class="image--circle" src="./assets/testimonial-3.jpg" alt="Roy Smith - Developer">
             <p class="text text--small text--italic text--distance-smaller" >
               Aria's CEO personally attends client meetings 
@@ -304,7 +305,7 @@
             </p>
             <h3 class="text text--small text--bolder text--dark-gray">Roy Smith - Developer</h3>
           </li>
-          <li class="carousel-item">
+          <li class="carousel__item">
             <img class="image--circle" src="./assets/testimonial-4.jpg" alt="Ronald Spice - Owner">
             <p class="text text--small text--italic text--distance-smaller" >
               At the beginning I thought the prices are a little high for what 
@@ -312,7 +313,7 @@
             </p>
             <h3 class="text text--small text--bolder text--dark-gray">Ronald Spice - Owner</h3>
           </li>
-          <li class="carousel-item">
+          <li class="carousel__item">
             <img class="image--circle" src="./assets/testimonial-5.jpg" alt="Lindsay Rune - Manager">
             <p class="text text--small text--italic text--distance-smaller" >
               I recommend Aria to every business owner or growth leader that 
@@ -320,7 +321,7 @@
             </p>
             <h3 class="text text--small text--bolder text--dark-gray">Lindsay Rune - Manager</h3>
           </li>
-          <li class="carousel-item">
+          <li class="carousel__item">
             <img class="image--circle" src="./assets/testimonial-6.jpg" alt="Ann Black - Consultant">
             <p class="text text--small text--italic text--distance-smaller" >
               My goals for using Aria's services seemed high when 
@@ -329,7 +330,7 @@
             <h3 class="text text--small text--bolder text--dark-gray">Ann Black - Consultant</h3>
           </li>
         </ul>
-        <a class="carousel-control-next carousel__arrow" href="#carousel-testimonials" role="button" data-slide="next"></a>
+        <button class="carousel__arrow slick-next" type="button"></button>
     </div>
   </section>
   <section id="call-me"></section>
@@ -375,6 +376,9 @@
       <p class="text text--small">By <a class="text text--underline" href="https://github.com/EstevaoCostaG3">Estevão Costa</a> - 2020</p>
     </div>
   </footer>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script type="text/javascript" src="./js/mobile.js"></script>
   <script type="text/javascript" src="./js/desktop.js"></script>
 </body>

@@ -4,7 +4,7 @@
   }
 }
 
-.carousel{
+.carousel-wrap{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,16 +22,22 @@
   transform: rotate(-180deg);
 } 
 
-.carousel-inner{
+.carousel{
   overflow: hidden;
-  width: 68vw;
+  width: 80%;
   max-width: 420px;
 }
 
-.carousel-item{
+.carousel__item{
   text-align: center;
-  max-width: 420px;
+  width: 100%;
   transition: var(--transition-all-ease-out);
+  
+  .image--circle{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 .image--circle{
