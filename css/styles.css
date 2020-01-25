@@ -694,6 +694,9 @@ footer.section .ul .ul__li:first-child {
   #details > .ul > .ul__li--width-large {
     width: 75%;
   }
+  #testimonials > .text-header {
+    width: 560px;
+  }
   .carousel {
     width: auto;
     max-width: 600px;

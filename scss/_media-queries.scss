@@ -70,6 +70,12 @@
     }
   }
 
+  #testimonials{
+    & > .text-header{
+      width: 560px;
+    }
+  }
+
   .carousel{
     width: auto;
     max-width: 600px;
