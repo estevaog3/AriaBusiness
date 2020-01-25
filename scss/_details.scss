@@ -9,6 +9,9 @@
       .image-container{
         height: 430px;
       }
+      .image-container__image{
+        object-fit: cover;
+      }
     }
 
     & > .ul__li--width-large{

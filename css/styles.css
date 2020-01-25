@@ -485,6 +485,11 @@
   height: 430px;
 }
 
+#details > .ul > .ul__li .image-container__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 #details > .ul > .ul__li--width-large {
   -ms-grid-column-align: center;
       justify-self: center;
