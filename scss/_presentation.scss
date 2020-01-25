@@ -65,6 +65,22 @@
 .social--smaller{
   height: 26px;
 }
+.social--on-hover-hexagon-white{
+  & > .hexagon{
+    cursor: pointer;
+    transition: var(--transition-all-ease-out);
+    .hexagon__icon{
+      transition: var(--transition-all-ease-out);
+    }
+  }
+  & > .hexagon:hover{
+    background: center/contain no-repeat url(../assets/hexagon-white.svg) border-box;
+    
+    .hexagon__icon{
+      color: var(--light-green);
+    }
+  }
+}
 
 #presentation .presentation__content{
   text-align: center;

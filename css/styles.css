@@ -87,6 +87,25 @@
   height: 26px;
 }
 
+.social--on-hover-hexagon-white > .hexagon {
+  cursor: pointer;
+  -webkit-transition: var(--transition-all-ease-out);
+  transition: var(--transition-all-ease-out);
+}
+
+.social--on-hover-hexagon-white > .hexagon .hexagon__icon {
+  -webkit-transition: var(--transition-all-ease-out);
+  transition: var(--transition-all-ease-out);
+}
+
+.social--on-hover-hexagon-white > .hexagon:hover {
+  background: center/contain no-repeat url(../assets/hexagon-white.svg) border-box;
+}
+
+.social--on-hover-hexagon-white > .hexagon:hover .hexagon__icon {
+  color: var(--light-green);
+}
+
 #presentation .presentation__content {
   text-align: center;
   position: absolute;
