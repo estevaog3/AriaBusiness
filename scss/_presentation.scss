@@ -120,6 +120,9 @@
 .text--italic{
   font-style: italic;
 }
+.text--distance-bigger{
+  margin-bottom: 2.5rem;
+}
 .text--distance-medium{
   margin-bottom: 1rem;
 }
@@ -131,6 +134,9 @@
 }
 .text--underline{
   text-decoration: underline;
+}
+.text--weight-normal{
+  font-weight: normal;
 }
 .text--on-hover-green{
   transition: var(--transition-all-ease-out);

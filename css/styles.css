@@ -152,6 +152,10 @@
   font-style: italic;
 }
 
+.text--distance-bigger {
+  margin-bottom: 2.5rem;
+}
+
 .text--distance-medium {
   margin-bottom: 1rem;
 }
@@ -166,6 +170,10 @@
 
 .text--underline {
   text-decoration: underline;
+}
+
+.text--weight-normal {
+  font-weight: normal;
 }
 
 .text--on-hover-green {
@@ -541,6 +549,53 @@
   height: auto;
 }
 
+#testimonials .image--circle {
+  margin-bottom: 1rem;
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carousel__arrow {
+  position: relative;
+  height: 44px;
+  width: 27px;
+  padding: 3px;
+  background: center/contain no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 28 44'%3E%3Cpath d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z' fill%3D'%23787976'%2F%3E%3C%2Fsvg%3E") content-box;
+  cursor: pointer;
+}
+
+.carousel__arrow--prev {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.carousel-inner {
+  overflow: hidden;
+  width: 68vw;
+  max-width: 420px;
+}
+
+.carousel-item {
+  text-align: center;
+  max-width: 420px;
+  -webkit-transition: var(--transition-all-ease-out);
+  transition: var(--transition-all-ease-out);
+}
+
+.image--circle {
+  border-radius: 50%;
+}
+
 footer.section {
   padding-bottom: 0;
 }
@@ -577,6 +632,8 @@ footer.section .ul .ul__li:first-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

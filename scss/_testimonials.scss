@@ -1,0 +1,39 @@
+#testimonials{
+  .image--circle{
+    margin-bottom: 1rem;
+  }
+}
+
+.carousel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carousel__arrow{
+  position: relative;
+  height: 44px;
+  width: 27px;
+  padding: 3px;
+  background: center / contain no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 28 44'%3E%3Cpath d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z' fill%3D'%23787976'%2F%3E%3C%2Fsvg%3E") content-box;
+  cursor: pointer;
+}
+.carousel__arrow--prev{
+  transform: rotate(-180deg);
+} 
+
+.carousel-inner{
+  overflow: hidden;
+  width: 68vw;
+  max-width: 420px;
+}
+
+.carousel-item{
+  text-align: center;
+  max-width: 420px;
+  transition: var(--transition-all-ease-out);
+}
+
+.image--circle{
+  border-radius: 50%;
+}
