@@ -1,20 +1,18 @@
-const pathOfHamburgerIcon = "./assets/hamburger-menu.png";
-const pathOfCloseIcon = "./assets/close.png";
-
-function toggleMobileMenu(){
-  let menuIcon = document.getElementsByClassName("nav__menu-icon")[0];
+mobileMenu = ( ()=> {
+  let menuIcons = document.getElementsByClassName("nav__menu-icon");
   let nav = document.getElementsByClassName("nav")[0];
-  if(! nav.classList.contains('nav--opened')){
-    nav.classList.add("nav--opened");
-    menuIcon.src = pathOfCloseIcon;
-  }else{
-    nav.classList.remove("nav--opened");
-    menuIcon.src = pathOfHamburgerIcon;
-  }
-}
 
-let menuIcon = document.getElementsByClassName("nav__menu-icon")[0];
-menuIcon.addEventListener("click", toggleMobileMenu);
+  function toggleMobileMenu(){
+    nav.classList.toggle("nav--opened");
+    for (let i = 0; i < menuIcons.length; i++){
+      menuIcons[i].classList.toggle("nav__menu-icon--active");
+    }
+  }
+  
+  for (let i = 0; i < menuIcons.length; i++) {
+    menuIcons[i].addEventListener("click", toggleMobileMenu);
+  }
+})();
 
 let tabBodies = document.getElementsByClassName('tab-container__tab-body');
 let navItems = document.getElementsByClassName("tab-container__nav-item");

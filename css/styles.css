@@ -59,6 +59,7 @@
 }
 
 .nav__menu-icon {
+  display: none;
   position: absolute;
   /* to center vertically, top offset must be set to 55px - H - H/2, 
   where H is the height of current element*/
@@ -66,6 +67,10 @@
   height: 28px;
   right: 6%;
   cursor: pointer;
+}
+
+.nav__menu-icon--active {
+  display: inline-block;
 }
 
 .menu {
