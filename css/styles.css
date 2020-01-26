@@ -229,6 +229,10 @@
   color: var(--light-green);
 }
 
+.button--width-full {
+  width: 100%;
+}
+
 .intro__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +294,10 @@
 .text-header__message {
   color: var(--dark-gray);
   font-size: 1.3rem;
+}
+
+.text-header__message--color-white {
+  color: #fff;
 }
 
 .intro__steps {
@@ -453,6 +461,10 @@
 
 .ul__li--color-dark-gray {
   color: var(--dark-gray);
+}
+
+.ul__li--color-white {
+  color: #fff;
 }
 
 .ul--decorated-with-squares > .ul__li {

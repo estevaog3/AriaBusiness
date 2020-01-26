@@ -78,6 +78,9 @@
 .ul__li--color-dark-gray{
   color: var(--dark-gray);
 }
+.ul__li--color-white{
+  color: #fff;
+}
 
 .ul--decorated-with-squares{
   & > .ul__li{
