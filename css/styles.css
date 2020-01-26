@@ -527,6 +527,7 @@
   margin-bottom: 1.4rem;
   --lighter-gray: #c1cace;
   color: var(--lighter-gray);
+  text-align: center;
 }
 
 .tab-container__nav-item {
@@ -844,6 +845,9 @@ footer.section .ul .ul__li:first-child {
   }
   #details > .ul > .ul__li .tab-container__tab-body {
     max-height: 310px;
+  }
+  #details > .ul > .ul__li .tab-container__nav {
+    text-align: left;
   }
   #details > .ul > .ul__li--width-large {
     width: 75%;
