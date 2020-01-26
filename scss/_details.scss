@@ -118,7 +118,7 @@
   color: var(--light-green);
 }
 
-.ol__count-item--align-text-on-top::before{
+.ol__count-item--align-counter-on-top::before{
   top: 0;
   transform: translate(calc(-1 * var(--count-item-size) - var(--li-space) ), 0);
 }

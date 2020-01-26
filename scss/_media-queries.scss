@@ -67,6 +67,22 @@
       & > .ul__li--width-large{
         width: 75%;
       }
+
+      & > .ul__li{
+
+        .tab-container__tab-body{
+          .ol{
+            max-height: 320px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+          }
+
+          .ol__li{
+            max-width: 290px;
+          }
+        }
+      }
     }
   }
 
@@ -192,8 +208,14 @@
           height: 360px;
         }
         .tab-container__tab-body{
-          max-height: 310px;
+          .ol{
+            max-height: 370px;
+          }
+          .ol__li{
+            max-width: 200px;
+          }
         }
+
         .tab-container__nav{
           text-align: left;
         }
