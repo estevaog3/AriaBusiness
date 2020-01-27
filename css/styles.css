@@ -1,6 +1,7 @@
 :root {
   --light-green: #14bf98;
   --dark-blue: #113448;
+  --blue: #153e52;
   --dark-gray: #484a46;
   --light-gray: #787976;
   --fas-primary-color: #fff;
@@ -386,6 +387,10 @@
 
 .section--background-color-light-white {
   background-color: var(--light-white);
+}
+
+.section--background-color-blue {
+  background-color: var(--blue);
 }
 
 .section--background-color-dark-blue {
