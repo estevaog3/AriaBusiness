@@ -953,6 +953,17 @@ footer.section .ul .ul__li:first-child {
     margin-left: 0.6665%;
     margin-right: 0.6665%;
   }
+  .section-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section-container > * {
+    width: 450px;
+  }
 }
 
 /* on large screen sizes: */
@@ -1004,6 +1015,13 @@ footer.section .ul .ul__li:first-child {
     width: 32.5%;
     margin-left: 0.4165%;
     margin-right: 0.4165%;
+  }
+  .section-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .section-container > * {
+    width: 464px;
   }
 }
 
