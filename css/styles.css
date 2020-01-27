@@ -733,7 +733,6 @@ footer.section .ul .ul__li:first-child {
   padding: 1rem;
 }
 
-/* on small screen sizes: */
 @media only screen and (min-width: 755px) {
   #presentation {
     height: 600px;
@@ -823,7 +822,6 @@ footer.section .ul .ul__li:first-child {
   }
 }
 
-/* on medium screen sizes: */
 @media only screen and (min-width: 1000px) {
   #presentation {
     height: 840px;
@@ -966,7 +964,6 @@ footer.section .ul .ul__li:first-child {
   }
 }
 
-/* on large screen sizes: */
 @media only screen and (min-width: 1200px) {
   #presentation {
     height: 900px;
