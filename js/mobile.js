@@ -68,3 +68,22 @@ function carousel (){
   });
 }
 $(document).ready(carousel);
+
+let formHandler = ( () => {
+  let forms = document.getElementsByClassName("form");
+  let formMessages = {};
+
+  function handleFormSubmit(e){
+    e.preventDefault();
+    e.target.reset();
+    formMessages[e.target.id].classList.add('form__submit-message--show');
+    setTimeout(()=>{
+      formMessages[e.target.id].classList.remove('form__submit-message--show');
+    }, 3000);
+  }
+
+  for(let i = 0; i < forms.length; i++){
+    forms[i].addEventListener("submit", handleFormSubmit);
+    formMessages[forms[i].id] = document.querySelector(`[data-message-of='${forms[i].id}']`);
+  }
+})();

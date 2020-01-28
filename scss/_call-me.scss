@@ -5,6 +5,7 @@
 }
 
 .form{
+  position: relative;
   & > :not(:first-child){
     margin-top: 1.2rem;
     width: 100%;
@@ -72,4 +73,16 @@
 .form-item__message{
   position: absolute;
   display: none;
+}
+
+.form__submit-message{
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: var(--transition-all-ease-out);
+}
+
+.form__submit-message--show{
+  opacity: 1;
 }
