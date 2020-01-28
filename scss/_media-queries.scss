@@ -84,10 +84,9 @@
     }
   }
 
-  #testimonials{
-    & > .text-header{
-      width: 560px;
-    }
+  .text-header--width-560-responsive{
+    width: 560px;
+  }
   .text-header--width-586-responsive{
     width: 586px;
   }

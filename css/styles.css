@@ -953,7 +953,7 @@ footer.section .ul .ul__li:first-child {
   #details > .ul > .ul__li .tab-container__tab-body .ol__li {
     max-width: 290px;
   }
-  #testimonials > .text-header {
+  .text-header--width-560-responsive {
     width: 560px;
   }
   .text-header--width-586-responsive {
