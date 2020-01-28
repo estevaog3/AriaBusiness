@@ -722,6 +722,7 @@
 
 .form-item {
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .form-item > input[type="text"],
@@ -755,7 +756,7 @@
   padding: .5em .8em;
 }
 
-.form-item__inner--toggle-message:required:invalid:not(:focus):placeholder-shown ~ .form-item__message {
+.form-item__inner--toggle-message:required:invalid:not(:focus):not(:placeholder-shown) ~ .form-item__message {
   display: block;
   margin-top: 2px;
 }
@@ -769,7 +770,6 @@
 .form-item__placeholder {
   position: absolute;
   font-size: .7rem;
-  font-family: "Open Sans", sans-serif;
   color: #fff;
   top: 50%;
   left: 20px;
