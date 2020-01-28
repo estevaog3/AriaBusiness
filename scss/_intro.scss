@@ -21,6 +21,10 @@
 
 .image-container--border-small{
   border-radius: 5px;
+  
+  & > .image-container__image{
+    border-radius: 5px;
+  }
 }
 
 .image-container__image--zoom-yes{

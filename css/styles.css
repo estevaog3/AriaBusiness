@@ -272,6 +272,10 @@
   border-radius: 5px;
 }
 
+.image-container--border-small > .image-container__image {
+  border-radius: 5px;
+}
+
 .image-container__image--zoom-yes {
   -webkit-transition: var(--transition-all-ease-out);
   transition: var(--transition-all-ease-out);
