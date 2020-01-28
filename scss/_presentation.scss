@@ -67,6 +67,13 @@
   display: none; 
 }
 
+.social--show{
+  display: inline-block;
+  .hexagon{
+    display: inline-block;
+  }
+}
+
 .social--smaller{
   height: 26px;
 }

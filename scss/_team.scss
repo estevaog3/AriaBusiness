@@ -1,0 +1,39 @@
+.flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  & > :not(:first-child){
+    margin-top: 2.4rem;
+  }
+}
+
+.flex__item{
+  text-align: center;
+  width: 100%;
+
+  & > :not(:first-child){
+    margin-top: .5rem;
+  }
+}
+
+#team{
+
+  .flex__item{
+
+    & > .image-container{
+      width: 207px;
+      height: 180px;
+      position: relative;
+      display: block;
+      margin: 0 auto;
+
+      & > .image-container__image{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+  }
+}
