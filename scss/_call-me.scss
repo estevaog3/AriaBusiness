@@ -1,0 +1,75 @@
+.section-container{
+  & > *:not(:first-child){
+    margin-top: 3rem;
+  }
+}
+
+.form{
+  & > :not(:first-child){
+    margin-top: 1.2rem;
+    width: 100%;
+  }
+}
+
+
+.form-item{
+  position: relative;
+  
+  & > input[type="text"],
+  & > input[type="email"],
+  & > input[type="tel"],
+  & > select{
+    $background-color: #2a5d77;
+    --border-color: #39728f;
+    $text-color: #fff;
+    background-color: $background-color;
+    padding: .9em .8em .5em .8em;
+    border-radius: 3px;
+    border: solid 1px var(--border-color);
+    color: $text-color;
+    width: 100%;
+    transition: var(--transition-all-ease-out);
+    height: 50px;
+    
+    &:focus, &:hover {
+      --border-color: #f3f7f8;
+      outline: none;
+    }
+  }
+  
+  & > select{
+    padding:.5em .8em;
+  }
+}
+
+.form-item__inner--toggle-message{
+  &:required:invalid:not(:focus):placeholder-shown{
+    & ~ .form-item__message{
+      display: block;
+      margin-top: 2px;
+    }
+  }
+
+  &:not(:placeholder-shown), &:focus{
+    & ~ .form-item__placeholder{
+      top: 3%;
+      transform: scale(.8);
+    }
+  }
+}
+
+.form-item__placeholder{
+  position: absolute;
+  font-size: .7rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  transition: var(--transition-all-ease-out);
+}
+
+.form-item__message{
+  position: absolute;
+  display: none;
+}

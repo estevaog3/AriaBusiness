@@ -354,40 +354,44 @@
           <li class="ul__li ul__li--color-white">Don't hesitate to email us for any questions or inquiries</li>
         </ul>
       </div>
-      <form>
-        <p>
-          <input type="text" placeholder="Name">
-        </p>
-        <br>
-        <p>
-          <input type="tel" placeholder="Phone" pattern="">
-        </p>
-        <br>
-        <p>
-          <input type="email" placeholder="Email" pattern="">
-        </p>
-        <br>
-        <p>
-          <select>
+      <form action="#call-me" class="form">
+        <div class="form-item">
+          <input required type="text" id="name1" placeholder=" "
+          class="form-item__inner--toggle-message">
+          <label class="form-item__placeholder" for="name1">Name</label>
+          <p class="form-item__message text text--white text--smaller">Please fill out this field.</p>
+        </div>
+        <div class="form-item">
+          <input required type="tel" placeholder=" " id="phone1"
+          class="form-item__inner--toggle-message" pattern="[0-9]{11}">
+          <label class="form-item__placeholder" for="phone1">Phone</label>
+          <p class="form-item__message text text--white text--smaller">Please fill out this field.</p>
+        </div>
+        <div class="form-item">
+          <input required type="email" placeholder=" " id="email1" 
+          class="form-item__inner--toggle-message" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+          <label class="form-item__placeholder" for="email1">Email</label>
+          <p class="form-item__message text text--white text--smaller">Please fill out this field.</p>
+        </div>
+        <div class="form-item">
+          <select required class="form-item__inner--toggle-message">
             <option disabled>Interested in...</option>
             <option >Off The Ground</option>
             <option >Accelerated Growth</option>
             <option >Market Domination</option>
           </select>
-        </p>
-        <br>
-        <p class="text text--smaller text--white">
-          <label>
-            <input type="checkbox">
+          <p class="form-item__message text text--white text--smaller">Please select an item in the list.</p>
+        </div>
+        <p class="form-item">
+          <input required type="checkbox" id="checkbox1" class="form-item__inner--toggle-message" placeholder=" ">
+          <label class="text text--smaller text--white" for="checkbox1">
             I agree with Aria's stated <a class="text--white" href="#">Privacy Policy</a> and <a class="text--white" href="#">Terms & Conditions</a>
           </label>
+          <p class="form-item__message text text--white text--smaller">Please check this box if you want to proceed.</p>
         </p>
-        <br>
-        <p class="text text--white">
-          <button class="button button--width-full button--on-hover-background-none-yes text text--white text--smaller text--uppercase text--bolder" type="submit">
-            CALL ME
-          </button>
-        </p>
+        <button class="button button--width-full button--on-hover-background-none-yes text text--white text--smaller text--uppercase text--bolder" type="submit">
+          CALL ME
+        </button>
       </form>
     </div>
   </section>

@@ -711,6 +711,79 @@
   border-radius: 50%;
 }
 
+.section-container > *:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.form > :not(:first-child) {
+  margin-top: 1.2rem;
+  width: 100%;
+}
+
+.form-item {
+  position: relative;
+}
+
+.form-item > input[type="text"],
+.form-item > input[type="email"],
+.form-item > input[type="tel"],
+.form-item > select {
+  --border-color: #39728f;
+  background-color: #2a5d77;
+  padding: .9em .8em .5em .8em;
+  border-radius: 3px;
+  border: solid 1px var(--border-color);
+  color: #fff;
+  width: 100%;
+  -webkit-transition: var(--transition-all-ease-out);
+  transition: var(--transition-all-ease-out);
+  height: 50px;
+}
+
+.form-item > input[type="text"]:focus, .form-item > input[type="text"]:hover,
+.form-item > input[type="email"]:focus,
+.form-item > input[type="email"]:hover,
+.form-item > input[type="tel"]:focus,
+.form-item > input[type="tel"]:hover,
+.form-item > select:focus,
+.form-item > select:hover {
+  --border-color: #f3f7f8;
+  outline: none;
+}
+
+.form-item > select {
+  padding: .5em .8em;
+}
+
+.form-item__inner--toggle-message:required:invalid:not(:focus):placeholder-shown ~ .form-item__message {
+  display: block;
+  margin-top: 2px;
+}
+
+.form-item__inner--toggle-message:not(:placeholder-shown) ~ .form-item__placeholder, .form-item__inner--toggle-message:focus ~ .form-item__placeholder {
+  top: 3%;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.form-item__placeholder {
+  position: absolute;
+  font-size: .7rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: var(--transition-all-ease-out);
+  transition: var(--transition-all-ease-out);
+}
+
+.form-item__message {
+  position: absolute;
+  display: none;
+}
+
 footer.section {
   padding-bottom: 0;
 }
@@ -966,6 +1039,9 @@ footer.section .ul .ul__li:first-child {
   }
   .section-container > * {
     width: 450px;
+  }
+  .section-container > *:not(:first-child) {
+    margin-top: 0;
   }
 }
 
