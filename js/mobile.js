@@ -46,6 +46,7 @@ function carousel (){
   $('.carousel').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
+    swipeToSlide: true,
     autoplay: true,
     autoplaySpeed: 2000,
     nextArrow: $('.slick-next'),
