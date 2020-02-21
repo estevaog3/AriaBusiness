@@ -1,3 +1,6 @@
+import $ from 'jquery';
+import 'slick-carousel';
+
 let mobileMenu = ( ()=> {
   let menuIcons = document.getElementsByClassName("nav__menu-icon");
   let nav = document.getElementsByClassName("nav")[0];
