@@ -769,18 +769,22 @@
 .form-item {
   position: relative;
   font-family: 'Open Sans', sans-serif;
+  --text-color: #fff;
+  color: var(--text-color);
 }
 
 .form-item > input[type="text"],
 .form-item > input[type="email"],
 .form-item > input[type="tel"],
-.form-item > select {
+.form-item > select,
+.form-item > textarea {
+  --background-color: #2a5d77;
   --border-color: #39728f;
-  background-color: #2a5d77;
+  background-color: var(--background-color);
   padding: .9em .8em .5em .8em;
   border-radius: 3px;
   border: solid 1px var(--border-color);
-  color: #fff;
+  color: inherit;
   width: 100%;
   -webkit-transition: var(--transition-all-ease-out);
   transition: var(--transition-all-ease-out);
@@ -793,7 +797,9 @@
 .form-item > input[type="tel"]:focus,
 .form-item > input[type="tel"]:hover,
 .form-item > select:focus,
-.form-item > select:hover {
+.form-item > select:hover,
+.form-item > textarea:focus,
+.form-item > textarea:hover {
   --border-color: #f3f7f8;
   outline: none;
 }
@@ -802,21 +808,56 @@
   padding: .5em .8em;
 }
 
+.form-item > textarea {
+  height: unset;
+  font-size: .8rem;
+  line-height: 1.2rem;
+  resize: vertical;
+}
+
+.form-item--theme-light {
+  --text-color: var(--light-gray);
+}
+
+.form-item--theme-light > input[type="text"],
+.form-item--theme-light > input[type="email"],
+.form-item--theme-light > input[type="tel"],
+.form-item--theme-light > select,
+.form-item--theme-light > textarea {
+  --background-color: #fff;
+  --border-color: #dadada;
+}
+
+.form-item--theme-light > input[type="text"]:focus, .form-item--theme-light > input[type="text"]:hover,
+.form-item--theme-light > input[type="email"]:focus,
+.form-item--theme-light > input[type="email"]:hover,
+.form-item--theme-light > input[type="tel"]:focus,
+.form-item--theme-light > input[type="tel"]:hover,
+.form-item--theme-light > select:focus,
+.form-item--theme-light > select:hover,
+.form-item--theme-light > textarea:focus,
+.form-item--theme-light > textarea:hover {
+  --border-color: #a1a1a1;
+}
+
+.form-item--theme-light > .form-item__placeholder {
+  color: --text-color;
+}
+
 .form-item__inner--toggle-message:required:invalid:not(:focus):not(:placeholder-shown) ~ .form-item__message {
   display: block;
   margin-top: 2px;
 }
 
 .form-item__inner--toggle-message:not(:placeholder-shown) ~ .form-item__placeholder, .form-item__inner--toggle-message:focus ~ .form-item__placeholder {
-  top: 3%;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  top: 10px;
+  font-size: .6em;
 }
 
 .form-item__placeholder {
   position: absolute;
   font-size: .7rem;
-  color: #fff;
+  color: inherit;
   top: 50%;
   left: 20px;
   -webkit-transform: translateY(-50%);
@@ -825,9 +866,14 @@
   transition: var(--transition-all-ease-out);
 }
 
+.form-item__placeholder--align-top {
+  top: 18px;
+}
+
 .form-item__message {
   position: absolute;
   display: none;
+  color: inherit;
 }
 
 .form__submit-message {

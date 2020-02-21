@@ -16,19 +16,20 @@
 .form-item{
   position: relative;
   font-family: 'Open Sans', sans-serif;
-  
+  --text-color: #fff;
+  color: var(--text-color);
   & > input[type="text"],
   & > input[type="email"],
   & > input[type="tel"],
-  & > select{
-    $background-color: #2a5d77;
+  & > select,
+  & > textarea{
+    --background-color: #2a5d77;
     --border-color: #39728f;
-    $text-color: #fff;
-    background-color: $background-color;
+    background-color: var(--background-color);
     padding: .9em .8em .5em .8em;
     border-radius: 3px;
     border: solid 1px var(--border-color);
-    color: $text-color;
+    color: inherit;
     width: 100%;
     transition: var(--transition-all-ease-out);
     height: 50px;
@@ -42,6 +43,34 @@
   & > select{
     padding:.5em .8em;
   }
+
+  & > textarea{
+    height: unset;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    resize: vertical;
+  }
+}
+
+.form-item--theme-light{
+  --text-color: var(--light-gray);
+
+  & > input[type="text"],
+  & > input[type="email"],
+  & > input[type="tel"],
+  & > select,
+  & > textarea{
+    --background-color: #fff;
+    --border-color: #dadada;
+
+    &:focus, &:hover {
+      --border-color: #a1a1a1;
+    }
+  }
+
+  & > .form-item__placeholder{
+    color: --text-color;
+  }
 }
 
 .form-item__inner--toggle-message{
@@ -54,8 +83,8 @@
 
   &:not(:placeholder-shown), &:focus{
     & ~ .form-item__placeholder{
-      top: 3%;
-      transform: scale(.8);
+      top: 10px;
+      font-size: .6em;
     }
   }
 }
@@ -63,16 +92,21 @@
 .form-item__placeholder{
   position: absolute;
   font-size: .7rem;
-  color: #fff;
+  color: inherit;
   top: 50%;
   left: 20px;
   transform: translateY(-50%);
   transition: var(--transition-all-ease-out);
 }
 
+.form-item__placeholder--align-top{
+  top: 18px;
+}
+
 .form-item__message{
   position: absolute;
   display: none;
+  color: inherit;
 }
 
 .form__submit-message{
