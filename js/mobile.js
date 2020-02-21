@@ -1,4 +1,4 @@
-mobileMenu = ( ()=> {
+let mobileMenu = ( ()=> {
   let menuIcons = document.getElementsByClassName("nav__menu-icon");
   let nav = document.getElementsByClassName("nav")[0];
 
