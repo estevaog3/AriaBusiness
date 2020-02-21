@@ -554,6 +554,36 @@
           </div>
         </div>
       </div>
+      <form class="form" id="form_2">
+        <div class="form-item form-item--theme-light">
+          <input required type="text" id="name_2" placeholder=" "
+          class="form-item__inner--toggle-message">
+          <label class="form-item__placeholder" for="name_2">Name</label>
+          <p class="form-item__message text text--white text--smaller">Please fill out this field.</p>
+        </div>
+        <div class="form-item form-item--theme-light">
+          <input required type="email" placeholder=" " id="email_2" 
+          class="form-item__inner--toggle-message" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+          <label class="form-item__placeholder" for="email_2">Email</label>
+          <p class="form-item__message text text--white text--smaller">Please enter an email address.</p>
+        </div>
+        <div class="form-item form-item--theme-light">
+          <textarea required id="textarea_2" class="form-item__inner--toggle-message" placeholder=" " rows="4"></textarea>
+          <label class="form-item__placeholder form-item__placeholder--align-top" for="textarea_2">Your message</label>
+        </div>
+        <div class="form-item">
+          <input required type="checkbox" id="checkbox_2">
+          <label class="text text--smaller" for="checkbox_2">
+            I agree with Aria's stated <a class="text text--underline" href="#">Privacy Policy</a> and <a class="text text--underline" href="#">Terms & Conditions</a>
+          </label>
+        </div>
+        <button class="button button--width-full button--on-hover-background-none-yes text text--white text--smaller text--uppercase text--bolder" type="submit">
+          SUBMIT MESSAGE
+        </button>
+        <div class="form__submit-message" data-message-of="form_2">
+          <p class="text text--dark-gray text--medium">Message Submitted!</p>
+        </div>
+      </form>
     </div>
   </section>
   <footer class="section section--background-color-dark-blue">
