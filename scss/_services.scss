@@ -68,9 +68,27 @@
   }
 }
 
+.ul--distance-medium{
+  margin-bottom: 2rem;  
+}
+
 .ul__li, .ol__li{
   margin: .5rem 0;
   color: var(--light-gray);
+}
+
+.ul__li--margin-smaller{
+  margin-top: .1rem;
+  margin-bottom: .1rem;
+}
+
+.ul__li--inline-block{
+  display: inline-block;
+  width: 100%;
+
+  &:not(:last-child){
+    margin-right: .6em;
+  }
 }
 
 .ul__li--distance-medium{
