@@ -4,7 +4,9 @@
   "description": "This is a responsive landing page for a fictional business company. Check it out: https://estevaocostag3.github.io/AriaBusiness/.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js --mode=development"
+    "build": "webpack -p --config webpack.config.js --progress",
+    "build-dev": "webpack --mode=development --config webpack.config.js --progress",
+    "watch": "webpack --watch --config webpack.config.js --mode=development"
   },
   "repository": {
     "type": "git",
