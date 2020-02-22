@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/slick-carousel/slick/slick.css":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/slick-carousel/slick/slick.css ***!
-  \*******************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/slick-carousel/slick/slick.css":
+/*!*****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src!./node_modules/slick-carousel/slick/slick.css ***!
+  \*****************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"/* Slider */\\n.slick-slider\\n{\\n    position: relative;\\n\\n    display: block;\\n    box-sizing: border-box;\\n\\n    -webkit-user-select: none;\\n       -moz-user-select: none;\\n        -ms-user-select: none;\\n            user-select: none;\\n\\n    -webkit-touch-callout: none;\\n    -khtml-user-select: none;\\n    -ms-touch-action: pan-y;\\n        touch-action: pan-y;\\n    -webkit-tap-highlight-color: transparent;\\n}\\n\\n.slick-list\\n{\\n    position: relative;\\n\\n    display: block;\\n    overflow: hidden;\\n\\n    margin: 0;\\n    padding: 0;\\n}\\n.slick-list:focus\\n{\\n    outline: none;\\n}\\n.slick-list.dragging\\n{\\n    cursor: pointer;\\n    cursor: hand;\\n}\\n\\n.slick-slider .slick-track,\\n.slick-slider .slick-list\\n{\\n    -webkit-transform: translate3d(0, 0, 0);\\n       -moz-transform: translate3d(0, 0, 0);\\n        -ms-transform: translate3d(0, 0, 0);\\n         -o-transform: translate3d(0, 0, 0);\\n            transform: translate3d(0, 0, 0);\\n}\\n\\n.slick-track\\n{\\n    position: relative;\\n    top: 0;\\n    left: 0;\\n\\n    display: block;\\n    margin-left: auto;\\n    margin-right: auto;\\n}\\n.slick-track:before,\\n.slick-track:after\\n{\\n    display: table;\\n\\n    content: '';\\n}\\n.slick-track:after\\n{\\n    clear: both;\\n}\\n.slick-loading .slick-track\\n{\\n    visibility: hidden;\\n}\\n\\n.slick-slide\\n{\\n    display: none;\\n    float: left;\\n\\n    height: 100%;\\n    min-height: 1px;\\n}\\n[dir='rtl'] .slick-slide\\n{\\n    float: right;\\n}\\n.slick-slide img\\n{\\n    display: block;\\n}\\n.slick-slide.slick-loading img\\n{\\n    display: none;\\n}\\n.slick-slide.dragging img\\n{\\n    pointer-events: none;\\n}\\n.slick-initialized .slick-slide\\n{\\n    display: block;\\n}\\n.slick-loading .slick-slide\\n{\\n    visibility: hidden;\\n}\\n.slick-vertical .slick-slide\\n{\\n    display: block;\\n\\n    height: auto;\\n\\n    border: 1px solid transparent;\\n}\\n.slick-arrow.slick-hidden {\\n    display: none;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./node_modules/slick-carousel/slick/slick.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"/* Slider */\\n.slick-slider\\n{\\n    position: relative;\\n\\n    display: block;\\n    box-sizing: border-box;\\n\\n    -webkit-user-select: none;\\n       -moz-user-select: none;\\n        -ms-user-select: none;\\n            user-select: none;\\n\\n    -webkit-touch-callout: none;\\n    -khtml-user-select: none;\\n    touch-action: pan-y;\\n    -webkit-tap-highlight-color: transparent;\\n}\\n\\n.slick-list\\n{\\n    position: relative;\\n\\n    display: block;\\n    overflow: hidden;\\n\\n    margin: 0;\\n    padding: 0;\\n}\\n.slick-list:focus\\n{\\n    outline: none;\\n}\\n.slick-list.dragging\\n{\\n    cursor: pointer;\\n    cursor: hand;\\n}\\n\\n.slick-slider .slick-track,\\n.slick-slider .slick-list\\n{\\n    transform: translate3d(0, 0, 0);\\n}\\n\\n.slick-track\\n{\\n    position: relative;\\n    top: 0;\\n    left: 0;\\n\\n    display: block;\\n    margin-left: auto;\\n    margin-right: auto;\\n}\\n.slick-track:before,\\n.slick-track:after\\n{\\n    display: table;\\n\\n    content: '';\\n}\\n.slick-track:after\\n{\\n    clear: both;\\n}\\n.slick-loading .slick-track\\n{\\n    visibility: hidden;\\n}\\n\\n.slick-slide\\n{\\n    display: none;\\n    float: left;\\n\\n    height: 100%;\\n    min-height: 1px;\\n}\\n[dir='rtl'] .slick-slide\\n{\\n    float: right;\\n}\\n.slick-slide img\\n{\\n    display: block;\\n}\\n.slick-slide.slick-loading img\\n{\\n    display: none;\\n}\\n.slick-slide.dragging img\\n{\\n    pointer-events: none;\\n}\\n.slick-initialized .slick-slide\\n{\\n    display: block;\\n}\\n.slick-loading .slick-slide\\n{\\n    visibility: hidden;\\n}\\n.slick-vertical .slick-slide\\n{\\n    display: block;\\n\\n    height: auto;\\n\\n    border: 1px solid transparent;\\n}\\n.slick-arrow.slick-hidden {\\n    display: none;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./node_modules/slick-carousel/slick/slick.css?./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src");
 
 /***/ }),
 
@@ -127,7 +127,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../css-loader/dist/cjs.js!./slick.css */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/slick-carousel/slick/slick.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./node_modules/slick-carousel/slick/slick.css?");
+eval("var api = __webpack_require__(/*! ../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../css-loader/dist/cjs.js!../../postcss-loader/src!./slick.css */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/src/index.js!./node_modules/slick-carousel/slick/slick.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./node_modules/slick-carousel/slick/slick.css?");
 
 /***/ }),
 
@@ -154,6 +154,17 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./scss/styles.scss":
+/*!**************************!*\
+  !*** ./scss/styles.scss ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./scss/styles.scss?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -163,6 +174,17 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ \"./node_modules/slick-carousel/slick/slick.js\");\n/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel/slick/slick.css */ \"./node_modules/slick-carousel/slick/slick.css\");\n/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\nlet mobileMenu = ( ()=> {\n  let menuIcons = document.getElementsByClassName(\"nav__menu-icon\");\n  let nav = document.getElementsByClassName(\"nav\")[0];\n\n  function toggleMobileMenu(){\n    nav.classList.toggle(\"nav--opened\");\n    for (let i = 0; i < menuIcons.length; i++){\n      menuIcons[i].classList.toggle(\"nav__menu-icon--active\");\n    }\n  }\n  \n  for (let i = 0; i < menuIcons.length; i++) {\n    menuIcons[i].addEventListener(\"click\", toggleMobileMenu);\n  }\n})();\n\nlet tabBodies = document.getElementsByClassName('tab-container__tab-body');\nlet navItems = document.getElementsByClassName(\"tab-container__nav-item\");\nlet current = {\n  'tabBodySelected': tabBodies[0],\n  'navItemSelected': navItems[0]\n};\nfunction handleTabInteraction(event){\n  if(tabBodies.length != navItems.length){\n    console.error(\"There must be a equal number of nav items and tab bodies\");\n    return;\n  }\n  let selectedItem = parseInt(event.target.classList[0].slice(-1)); //the last character must be the item number\n  if(isNaN(selectedItem) || selectedItem < 0 || selectedItem > navItems.length){\n    console.error(\"'selectedItem' is invalid:\", selectedItem);\n    return;\n  }\n  current['navItemSelected'].classList.remove('tab-container__nav-item--selected');\n  current['tabBodySelected'].classList.remove('tab-container__tab-body--selected');\n  navItems[selectedItem - 1].classList.add('tab-container__nav-item--selected');\n  tabBodies[selectedItem - 1].classList.add('tab-container__tab-body--selected');\n  current['navItemSelected'] = navItems[selectedItem - 1];\n  current['tabBodySelected'] = tabBodies[selectedItem - 1];\n}\n\nfor (let i = 0; i < navItems.length; i++) {\n  navItems[i].addEventListener('click', handleTabInteraction);\n}\n\nfunction carousel (){\n  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.carousel').slick({\n    slidesToShow: 1,\n    slidesToScroll: 1,\n    swipeToSlide: true,\n    autoplay: true,\n    autoplaySpeed: 2000,\n    nextArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slick-next'),\n    prevArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slick-prev'),\n    mobileFirst: true,\n    responsive :[\n      {\n        breakpoint: 755,\n        settings:{\n          slidesToShow: 2,\n        }\n      },\n      {\n        breakpoint: 1000,\n        settings:{\n          slidesToShow: 3,\n        },\n      }\n    ]\n  });\n}\njquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(carousel);\n\nlet formHandler = ( () => {\n  let forms = document.getElementsByClassName(\"form\");\n  let formMessages = {};\n\n  function handleFormSubmit(e){\n    e.preventDefault();\n    e.target.reset();\n    formMessages[e.target.id].classList.add('form__submit-message--show');\n    setTimeout(()=>{\n      formMessages[e.target.id].classList.remove('form__submit-message--show');\n    }, 3000);\n  }\n\n  for(let i = 0; i < forms.length; i++){\n    forms[i].addEventListener(\"submit\", handleFormSubmit);\n    formMessages[forms[i].id] = document.querySelector(`[data-message-of='${forms[i].id}']`);\n  }\n})();\n\nconst scrollTopThreshold = 2;\nlet nav = document.getElementsByClassName('nav')[0];\n\nfunction handleScroll(){\n  if(document.body.scrollTop > scrollTopThreshold || document.documentElement.scrollTop > scrollTopThreshold){\n    nav.classList.add('nav--on-scroll');\n  }else{\n    nav.classList.remove('nav--on-scroll');\n  }\n}\n\nwindow.onscroll = () => {handleScroll()};\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ 0:
+/*!***********************************************!*\
+  !*** multi ./src/index.js ./scss/styles.scss ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./src/index.js */\"./src/index.js\");\nmodule.exports = __webpack_require__(/*! ./scss/styles.scss */\"./scss/styles.scss\");\n\n\n//# sourceURL=webpack:///multi_./src/index.js_./scss/styles.scss?");
 
 /***/ })
 
