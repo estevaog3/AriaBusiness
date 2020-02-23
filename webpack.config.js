@@ -29,4 +29,8 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
   ],
+  devServer: {
+    publicPath: '/dist/',
+    contentBase: './',
+  },
 };

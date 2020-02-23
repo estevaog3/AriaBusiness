@@ -7,7 +7,7 @@
     "build": "webpack -p --config webpack.config.js --progress",
     "build-dev": "webpack --mode=development --config webpack.config.js --progress",
     "watch": "webpack --watch --config webpack.config.js --mode=development --display=minimal",
-    "server": "webpack-dev-server --open"
+    "server": "webpack-dev-server --open --mode=development"
   },
   "repository": {
     "type": "git",
