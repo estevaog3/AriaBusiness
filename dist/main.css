@@ -59,7 +59,7 @@ p, q, a, li {
   transition: var(--transition-all-ease-out); }
 
 .nav--opened {
-  height: 318px;
+  height: 284px;
   padding-bottom: 0; }
 
 .nav__logo {

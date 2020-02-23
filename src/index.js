@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 let mobileMenu = ( ()=> {
   let menuIcons = document.getElementsByClassName("nav__menu-icon");
   let nav = document.getElementsByClassName("nav")[0];
+  let menuItems = nav.getElementsByClassName("menu__item");
 
   function toggleMobileMenu(){
     nav.classList.toggle("nav--opened");
@@ -13,6 +14,17 @@ let mobileMenu = ( ()=> {
     }
   }
   
+  
+  function closeMobileMenuOnMenuItemClick(){
+    if(nav.classList.contains("nav--opened")){
+      toggleMobileMenu();
+    }
+  }
+
+  for(let i = 0; i < menuItems.length; i++){
+    menuItems[i].addEventListener("click", closeMobileMenuOnMenuItemClick);
+  }
+
   for (let i = 0; i < menuIcons.length; i++) {
     menuIcons[i].addEventListener("click", toggleMobileMenu);
   }
