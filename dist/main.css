@@ -467,14 +467,17 @@ p, q, a, li {
     color: var(--light-green); }
 
 .tab-container__tab-body {
+  /* the delays and the non-zero transition times in fade-out and fade-in transitions
+  must be set to the same duration in order to the fades be correctly synchronized */
+  --fade-duration: .2s;
   opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: all 1s cubic-bezier(0.17, 0.84, 0.44, 1); }
+  max-height: 0;
+  transition: opacity var(--fade-duration) cubic-bezier(0.17, 0.84, 0.44, 1), max-height 0s cubic-bezier(0.17, 0.84, 0.44, 1) var(--fade-duration); }
 
 .tab-container__tab-body--selected {
   opacity: 1;
-  height: auto; }
+  max-height: 1000px;
+  transition: opacity var(--fade-duration) cubic-bezier(0.17, 0.84, 0.44, 1) var(--fade-duration), max-height 0s cubic-bezier(0.17, 0.84, 0.44, 1) var(--fade-duration); }
 
 .ol {
   counter-reset: count; }
