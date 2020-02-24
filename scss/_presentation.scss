@@ -25,6 +25,10 @@
   text-align: justify;
   overflow: hidden;
   transition: var(--transition-all-ease-out);
+
+  > * {
+    display: inline-block;
+  }
 }
 
 .nav--opened{
@@ -38,14 +42,19 @@
 }
 
 .nav__menu-icon{
+  --menu-icon-size: 32px;
+  height: var(--menu-icon-size);
+  width: var(--menu-icon-size);
   display: none;
-  position: absolute;
-  /* to center vertically, top offset must be set to 55px - H - H/2, 
-  where H is the height of current element*/
-  top: calc(55px - 28px - 14px); 
-  height: 28px;
-  right: 6%;
   cursor: pointer;
+  position: relative;
+
+  & > svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .nav__menu-icon--active{

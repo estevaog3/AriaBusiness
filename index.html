@@ -14,12 +14,20 @@
     <nav class="nav">
       <img class="nav__logo" 
       src="./assets/logo.svg" alt="Aria">
-      <svg class="nav__menu-icon nav__menu-icon--active" id="i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5">
-        <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24" />
-      </svg>
-      <svg id="i-close" class="nav__menu-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5">
-        <path d="M2 30 L30 2 M30 30 L2 2" />
-      </svg>
+      <div class="nav__menu-icon nav__menu-icon--active">
+        <svg id="i-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" 
+        width="28" height="32" fill="none" stroke="currentcolor" 
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="3.5">
+          <path d="M4 8 L28 8 M4 16 L28 16 M4 24 L28 24" />
+        </svg>
+      </div>
+      <div class="nav__menu-icon">
+        <svg id="i-close"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" 
+        width="18" height="32" fill="none" stroke="currentcolor" 
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+          <path d="M2 30 L30 2 M30 30 L2 2" />
+        </svg>
+      </div>
       <div class="menu">
         <a class="menu__item text text--smaller text--uppercase text--bolder text--white text--on-hover-green" href="#presentation">Home</a>
         <a class="menu__item text text--smaller text--uppercase text--bolder text--white text--on-hover-green" href="#intro">Intro</a>
