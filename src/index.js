@@ -117,3 +117,13 @@ function handleScroll(){
 }
 
 window.onscroll = () => {handleScroll()};
+
+let navigationHanler = (() =>{
+  let navigationTriggers = document.querySelectorAll("[data-navigate-to]");
+  navigationTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      let destination = trigger.getAttribute('data-navigate-to');
+      document.location.href = destination;
+    });
+  });
+})();
