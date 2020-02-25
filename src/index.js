@@ -127,3 +127,31 @@ let navigationHanler = (() =>{
     });
   });
 })();
+
+let animatedTextHandler = (() => {
+  let textList = ['SOLUTIONS', 'SERVICES', 'RESULTS'];
+  let animatedText = document.querySelector('.js-animated-text');
+  let next = 0;
+  for(let i = 0; i < textList.length; i++){
+    if(animatedText.innerText == textList[i]){
+      next = (i + 1) % textList.length;
+    }
+  }
+  
+  let timeToFade = 2000;
+  function changeText(){
+    if(animatedText.classList.contains('js-animated-text--fade-out')){
+      animatedText.innerText = textList[next];
+      next = (next + 1) % textList.length;
+      animatedText.classList.remove('js-animated-text--fade-out')
+      animatedText.classList.add('js-animated-text--fade-in');
+    }else{
+      setTimeout(() => {
+        animatedText.classList.remove('js-animated-text--fade-in');
+        animatedText.classList.add('js-animated-text--fade-out');
+      }, timeToFade);
+    }
+  }
+  animatedText.addEventListener('transitionend', changeText);
+  animatedText.classList.add('js-animated-text--fade-out');
+})();

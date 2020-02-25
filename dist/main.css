@@ -212,6 +212,14 @@ p, q, a, li {
 .button--width-full {
   width: 100%; }
 
+.js-animated-text--fade-out {
+  opacity: 0;
+  transition: opacity 0.2s cubic-bezier(0.17, 0.84, 0.44, 1); }
+
+.js-animated-text--fade-in {
+  opacity: 1;
+  transition: opacity 0.2s cubic-bezier(0.17, 0.84, 0.44, 1); }
+
 .intro__content {
   display: flex;
   flex-direction: column;
