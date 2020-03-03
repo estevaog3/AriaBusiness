@@ -1,7 +1,7 @@
 # Aria Business
 This is a responsive landing page for a fictional business company. Check it out: https://estevaocostag3.github.io/AriaBusiness/.
 
-<p>
+<p align="center">
   <img src="AriaBusiness.gif" alt="GIF Demo"/>
 </p>
 
