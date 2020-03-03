@@ -12,6 +12,28 @@ This is a responsive landing page for a fictional business company. Check it out
 - Javascript
 - JQuery, a little bit
 
+## Development setup
+
+1. Clone the repo, and navigate to it
+```
+git clone https://github.com/EstevaoCostaG3/AriaBusiness.git && cd AriaBusiness
+```
+
+2. Install NPM dependencies
+```
+npm install
+```
+
+3. Init the webpack development server. The AriaBusiness site will be opened in your browser. Now, you can change any code and the server will live-reload it.
+```
+npm run server
+```
+
+4. Watch for changes on the local file system. Since the webpack development server builds the code in memory, this is needed to build the aplication locally on each code modification.
+```
+npm run watch
+```
+
 ## What I learned along the way
 
 - How to think about CSS and HTML in terms of the BEM methodology
