@@ -49,4 +49,4 @@ npm run watch
 
 ## Acknowledgment
 
-This landing page is based on [this template](https://inovatik.com/aria-landing-page/index.html).
+This landing page is based on [this template](https://inovatik.com/aria-landing-page/index.html) (The URL might be broken though).
