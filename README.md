@@ -49,4 +49,4 @@ npm run watch
 
 ## Acknowledgment
 
-This landing page is based on [this template](https://inovatik.com/aria-landing-page/index.html) (The URL might be broken though).
+This landing page is based on a template. At the time of writing, the template is available on this URL: https://enviroponics.org/.
